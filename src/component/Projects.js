@@ -31,6 +31,25 @@ export const Projects = () => {
           </div>
         </div>
        </div>
+       <div className='d-flex py-3  project-section' >
+        <img className=' Image-section img-fluid w-100' 
+             src='images/gemini.jpeg'/>
+        <div className=' m-5 project-layer'>
+          <h3>Gemini-gpt Clone</h3>
+          <p>"I've engineered a Gemini-GPT clone, pushing the boundaries of AI replication."
+"Behold, my Gemini-GPT replica, a testament to innovation in artificial intelligence." </p>
+        <div className='project-links'>
+          <a href='https://gemini-clone-gpt.netlify.app/'
+             className=''>
+              <FaExternalLinkAlt /> 
+          </a>
+          <a href='https://github.com/Manishh05/gemini-clone.git' 
+            className=' m-5'>
+              <FaGithub />
+          </a>
+        </div>
+        </div>
+        </div>
         <div className='d-flex py-3  project-section' >
         <img className=' Image-section img-fluid w-100' 
              src='images/Netflix.jpeg'/>
@@ -38,7 +57,7 @@ export const Projects = () => {
           <h3>Netflix Clone</h3>
           <p>I've Crafted a captitaving Netflix Landing page utilizing Frontend Technlogies from Sleek animation to Responsive layouts, it sets the stage engaging content discovery. </p>
         <div className='project-links'>
-          <a href='https://netflixx-clone.netlify.app/' 
+          <a href='https://netflixx-clone.netlify.app/'
              className=''>
               <FaExternalLinkAlt /> 
           </a>
