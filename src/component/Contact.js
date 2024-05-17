@@ -5,7 +5,7 @@ import React from "react";
 
 function Contact() {
     return (
-      <div className="container">
+      <div className="container-xxl">
         <div className="contact-title title" 
              id="contact" 
              data-aos="fade-left">
@@ -37,12 +37,12 @@ function Contact() {
                src="images/github (2).svg"/>
               </a>
               <a
-                href="mailto:manish:marcmaniix05@gmail.com"
+                href="mailto:marcmaniix05@gmail.com"
                 target="_blank"
                 rel="noreferrer"
               >
                 <img className="gmail"
-                src="images/gmail.svg"/>
+                 src="images/gmail.svg"/>
               </a>
             </div>
           </div>

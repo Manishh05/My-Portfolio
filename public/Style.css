@@ -1,3 +1,6 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
 *{
     margin: 0;
     padding: 0;
@@ -10,8 +13,8 @@ body{
     color: rgb(0, 0, 0);
     overflow: hidden;
     overflow-y: scroll;
+    font-family: 'Poppins';
 }
-
 .navbar{
     margin: 0 auto;
     display: flex;
@@ -25,20 +28,17 @@ body{
 .navbar h1{
     color: rgb(255, 255, 255);
     font-weight: 800 bolder;
-    font-family
-    :Verdana, Geneva, Tahoma, sans-serif;
+    font-family:Poppins;
     cursor: pointer;
-
-   
 }
-.Menubar .menulist{
+.menulist{
    margin: 1rem;
    font-weight: 900;
    font-size: x-large;
-   font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+   font-family: 'Poppins';
    cursor: pointer;
 }
-.Menubar .menulist:hover{
+ .menulist:hover{
      color: rgb(255, 153, 0);
      padding-bottom: 0.5rem;
      border-bottom: 8px solid rgb(255, 153, 0);
@@ -58,6 +58,8 @@ body{
     flex-direction: column;
     justify-content: center;
     letter-spacing: 1px;
+    
+
 }
 .profile-content .Im{
     font-size: 1.75rem;
@@ -72,70 +74,74 @@ body{
     font-weight: 200 bold;
     margin: 6px;
 }
-
-
-.button {
-    width: 50px;
-    height: 50px;
-    border-radius: 50%;
-    background-color: rgb(255, 153, 0);
-    border: none;
-    font-weight: 600;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.164);
-    cursor: pointer;
-    transition-duration: .3s;
-    overflow: hidden;
-    position: relative;
-  }
+.Documents-btn {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  width: fit-content;
+  height: 40px;
+  border: none;
+  padding: 0px 15px;
+  border-radius: 5px;
+  background-color: rgb(255, 148, 18);
+  gap: 10px;
+  cursor: pointer;
+  transition: all 0.3s;
   
-  .svgIcon {
-    width: 12px;
-    transition-duration: .3s;
-  }
-  
-  .svgIcon path {
-    fill: rgb(255, 255, 255);
-  }
-  
-  .button:hover {
-    width: 140px;
-    border-radius: 50px;
-    transition-duration: .3s;
-    background-color: rgb(255, 153, 0);
-    align-items: center;
-  }
-  
-  .button:hover .svgIcon {
-    width: 50px;
-    transition-duration: .3s;
-    transform: translateY(60%);
-  }
-  
-  .button::before {
-    position: absolute;
-    top: -20px;
-    content: "DownLoad Resume";
-    color: rgb(0, 0, 0);
-    font-size: large;
-    transition-duration: .3s;
-    font-size: 2px;
-  }
-  
-  .button:hover::before {
-    font-size: 13px;
-    opacity: 1;
-    transform: translateY(30px);
-    transition-duration: .3s;
-  }
-
-
+}
+.folderContainer {
+  width: 40px;
+  height: fit-content;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-end;
+  position: relative;
+}
+.fileBack {
+  z-index: 1;
+  width: 80%;
+  height: auto;
+}
+.filePage {
+  width: 50%;
+  height: auto;
+  position: absolute;
+  z-index: 2;
+  transition: all 0.3s ease-out;
+}
+.fileFront {
+  width: 85%;
+  height: auto;
+  position: absolute;
+  z-index: 3;
+  opacity: 0.95;
+  transform-origin: bottom;
+  transition: all 0.3s ease-out;
+}
+.text {
+  color: rgb(255, 255, 255);
+  font-size: 14px;
+  font-weight: 600;
+  letter-spacing: 0.5px;
+}
+.Documents-btn:hover .filePage {
+  transform: translateY(-5px);
+}
+.Documents-btn:hover {
+  background-color:rgb(238, 130, 29);
+}
+.Documents-btn:active {
+  transform: scale(0.95);
+}
+.Documents-btn:hover .fileFront {
+  transform: rotateX(30deg);
+}
 .marquee-inner-wrapper h3{
     font-size: xx-large;
-}
+    font-weight: 900;
 
+}
 .about-content{
     word-spacing: 1em;
     font-size: 24px;
@@ -149,19 +155,22 @@ body{
 }
 .contact-details-wrapper p{
     font-weight: 700;
-    word-spacing: 1em;
+    font-family: 'Poppins';
 }
 .contact-title h3{
     font-size: xx-large;
     margin: 0;
+    font-weight: 900;
 }
-.about-title h3{
+.about-title {
     font-size: xx-large;
     margin: 0;
+    font-weight: 900;
 }
 .project-title h3{
     font-size: xx-large;
     margin: 0;
+    
 }
  .contact-icons a{
     justify-content: space-evenly;
@@ -174,9 +183,10 @@ body{
     margin: 12px;
     gap: 20px;
 }
-.project-layer h3{
+.project-title h3{
     font-size: 32px;
     font-weight: 800;
+    font-weight: 900;
 }
 .project-layer p{
     font-size: 16px;
@@ -193,18 +203,45 @@ body{
 .contact-icons a .github,.linked, .gmail{
     width: 100px;
 }
-
-.Menubar{
+.menulist{
     float: right;
+}
+
+.menu{
+    display: none;
+    cursor: pointer;
+   
 }
 
 @media  screen and (max-width:896px) {
     .Menubar{
         display: grid;
+        align-items: center;
+        margin: 12px;
         flex-wrap: wrap;
-        float: left;
-       
+        
+        
     }
+    .menu{
+        display: block;
+        float: left;
+        margin: 24px;
+    }
+    .Menubar .menulist{
+        flex-direction: column;
+        display: block;
+        margin-right: 12px auto;
+        width: 100px;
+        top: 100px;
+        
+    }
+    .Menubar .open{
+        display: flex;
+    }
+    .menulist{
+        display: none;
+    }
+  
     .about-section .section-title .img-box {
         width: 100%;
         
@@ -213,21 +250,31 @@ body{
         display: grid;
         flex-wrap: wrap;
         width: 100%;
+        font-family: 'Poppins';
     }
-    .about-section .about-content{
-        font-size: 16px;
-        font-weight: 100;
-       
+    .about-section .About-details h6{
+        font-size: 22px;
+        font-weight: 500;
+        
     }
-
+    
     .contact-title  .contact-icons{
         display: grid;
+        width: 50px;
     }
     .contact-icons a .github,.linked, .gmail{
-        width: 60px;
+        width: 70px;
+    }
+    .contact-icons p{
+        font-size: 24px;
+        font-weight: 500;
+        font-family: "Poppins";
     }
     .marquee-wrapper .Marquee-section{
-        width: 100%;
+         width: 100%;
+    }
+    .Marquee-section img{
+        width: 45px;
     }
     .project .project-section {
         width: 100%;
@@ -239,6 +286,7 @@ body{
         justify-content: center;
         top: 50%;
         left: 50%;
+        font-family: 'Poppins';
     }
     .project .project-section .project-layer h3{
         font-size: 24px;
@@ -251,6 +299,18 @@ body{
     .project .project-section .project-layer p{
         font-size: 14px;
         font-weight: 100 bold;
+        width: 100%;
+    }
+    .profile-content .para{
+        font-size: 16px bold;
+        font-weight: 600;
+        
+    }
+    .profile{
+        font-family: 'Poppins';
+    }
+    .img-box img{
+        margin-top: 10px;
     }
 }
 

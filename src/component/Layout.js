@@ -1,16 +1,16 @@
-import React from 'react'
-import { Outlet } from 'react-router-dom'
-import Home from "./Home"
-import Contact from './Contact'
+// import React from 'react'
+// import { Outlet } from 'react-router-dom'
+// import Home from "./Home"
+// import Contact from './Contact'
 
-const Layout = () => {
-  return (
-    <>
-      <Home />
-      <Outlet />
-      <Contact />
-    </>
-  )
-}
+// const Layout = () => {
+//   return (
+//     <>
+//       <Home />
+//       <Outlet />
+//       <Contact />
+//     </>
+//   )
+// }
 
-export default Layout ;
+// export default Layout ;

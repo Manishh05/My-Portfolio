@@ -4,7 +4,7 @@ import Marquee from "react-fast-marquee"
 const Skils = () => {
   return (
   <>
-   <section className='marquee-wrapper home-wrapper-2 py-5'>
+   <section className='marquee-wrapper home-wrapper-2 py-3'>
         <div className='container-xxl'>
           <div className='row'>
             <div className='col-12'>

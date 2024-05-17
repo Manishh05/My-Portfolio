@@ -12,9 +12,8 @@ const Profile = () => {
         <p className='para'>Hello, I'm Manish Kumar, a dedicated and skilled frontend developer specializing in React.js.</p>
         <a className='resume' alt="resume" href=''><RxResume /></a>
         <Link><button  className='btn'>Download Resume</button></Link>
-        
       </div>
-      <img src='' alt='' className='bg'/>
+    
     </section>
   </>
   )
